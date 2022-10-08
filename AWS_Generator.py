@@ -1,5 +1,4 @@
 from random import randint
-from random import seed
 import random
 import string
 
