@@ -20,3 +20,4 @@ if department == 'marketing' or department == 'accounting' or department == 'fin
         count += 1
 else: 
     print("You should not use this name generator as the departments currently supported are: Marketing, Accounting, and FinOps.")
+    
