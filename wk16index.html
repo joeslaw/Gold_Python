@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <style>
+            body{background: Green;
+            }
+        </style>
+    </head>
+
+<h1> Joey Slawinski Week 16 Project</h1>
+<h2> This is to display deployment date</h2>
+<h3><input id="date" type="date" /><script>
+    var new_date = new Date();
+    var current_date = new_date.toISOstring().slice(0,10);
+    var current_time = new_date.getHours() + ':' + new_date.getMinutes();
+    document.getElementById('new_date').value = current_date;
+</script>
+</h3>
+</html>
