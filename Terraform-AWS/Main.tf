@@ -1,11 +1,11 @@
 # --- root/main ---
 
-locals {
-  vpc_cidr = "10.124.0.0/16"
-}
+
 module "networking" {
   source           = "./Networking"
   vpc_cidr         = local.vpc_cidr
+  access_ip        = var.access_ip
+  security_groups  = local.security_groups
   private_sn_count = 3
   public_sn_count  = 2
   max_subnets      = 20
